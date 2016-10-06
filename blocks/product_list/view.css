@@ -1,0 +1,104 @@
+.default-shop-view a.ccm-block-page-list-rss-feed{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+div.ccm-block-page-list-wrapper {
+    position: relative;
+}
+
+.default-shop-view  div.ccm-block-page-list-page-entry-horizontal {
+    display: table;
+    width: 100%;
+}
+
+.default-shop-view div.ccm-block-page-list-page-entry-horizontal,
+.default-shop-view div.ccm-block-page-list-page-entry {
+    margin-bottom: 10px;
+}
+
+
+.default-shop-view .default-shop-view div.ccm-block-page-list-page-entry-horizontal div.ccm-block-page-list-page-entry-thumbnail {
+    display: table-cell;
+    vertical-align: top;
+    width: 1px;
+}
+
+.default-shop-view div.ccm-block-page-list-page-entry-horizontal div.ccm-block-page-list-page-entry-thumbnail img {
+    width: 120px;
+    max-width: none;
+}
+
+
+.default-shop-view div.ccm-block-page-list-page-entry-horizontal div.ccm-block-page-list-page-entry-text {
+    display: block;
+    padding-left: 20px;
+    vertical-align: top;
+}
+
+.default-shop-view div.ccm-block-page-list-page-entry-text div.ccm-block-page-list-title {
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow:0px 0px 0px #ddd;
+    padding-bottom: 15px;
+}
+
+.default-shop-view div.ccm-block-page-list-page-entry-read-more {
+    margin-top: 20px;
+}
+.default-shop-view .youcommerce_price{
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow:1px 1px 1px #ccc;
+    padding-top: 10px;
+}
+.default-shop-view .youommerce_btn {
+  background: #00db4d;
+  background-image: -webkit-linear-gradient(top, #00db4d, #218a1c);
+  background-image: -moz-linear-gradient(top, #00db4d, #218a1c);
+  background-image: -ms-linear-gradient(top, #00db4d, #218a1c);
+  background-image: -o-linear-gradient(top, #00db4d, #218a1c);
+  background-image: linear-gradient(to bottom, #00db4d, #218a1c);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Courier New;
+  color: #ffffff !important;
+  font-size: 17px;
+  padding: 6px 30px 5px 30px;
+  text-decoration: none;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.default-shop-view .youommerce_btn:hover, .default-shop-view .youommerce_btn:focus{
+  background: #07b312;
+  background-image: -webkit-linear-gradient(top, #07b312, #03a309);
+  background-image: -moz-linear-gradient(top, #07b312, #03a309);
+  background-image: -ms-linear-gradient(top, #07b312, #03a309);
+  background-image: -o-linear-gradient(top, #07b312, #03a309);
+  background-image: linear-gradient(to bottom, #07b312, #03a309);
+  text-decoration: none;
+}
+.default-shop-view .youcommerce_sku{
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+.default-shop-view .cartdetails{
+    text-align: center;
+}
+@media (max-width: 769px){
+    .default-shop-view .cartdetails{
+    text-align: right;
+    padding-right: 20px;
+}
+}
+.default-shop-view .shoplist{
+    padding: 15px;
+}
+.default-shop-view .youcommerce_imageholder img{
+  width: 100%;
+}
+/* ====== shop image ====== */
+

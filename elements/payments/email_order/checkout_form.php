@@ -1,0 +1,1 @@
+<?php echo t("Click 'Next' to send your order."); ?>

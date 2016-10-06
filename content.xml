@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<concrete5-cif version="1.0">
+     <pagetemplates>
+        <pagetemplate handle="left_sidebar" name="Left Sidebar" icon="left_sidebar.png" package="" />
+    </pagetemplates>
+    <pagetype name="New Product" handle="new_product" launch-in-composer="1">
+        <pagetemplates type="all" default="full"/>
+        <target handle="all" package=""/>
+        <composer>
+        <formlayout>
+          <set name="Product Details">
+            <control custom-template="" required="1" custom-label="Page Name" type="core_page_property" handle="name"/>
+            <control custom-template="" custom-label="" type="core_page_property" handle="description"/>
+            <control custom-template="" custom-label="" type="core_page_property" handle="url_slug"/>
+            <control custom-template="" custom-label="" type="core_page_property" handle="page_template"/>
+            <control custom-template="" custom-label="" type="core_page_property" handle="publish_target"/>
+          </set>
+          
+        </formlayout>
+        <output>
+          <pagetemplate handle="left_sidebar">
+            <page>
+              <area name="Main">
+                <blocks>
+                    <block type="core_page_type_composer_control_output" name="">
+                      <control output-control-id="EcjltFnF"/>
+                    </block>
+                </blocks>
+              </area>
+            </page>
+          </pagetemplate>
+        </output>
+      </composer>
+    </pagetype>
+</concrete5-cif>

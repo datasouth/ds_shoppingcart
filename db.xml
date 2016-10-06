@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+	<table name="DsShoppingCart">
+		<field name="scId" type="I">
+			<key />
+			<unsigned />
+			<autoincrement/>
+		</field>		
+		<field name="scUserId" type="I">
+			<notnull />
+		</field>
+		<field name="scProductId" type="I"> 
+		</field>
+		<field name="scQuantity" type="I">
+			<default value="0"/>
+		</field>
+		<field name="scPrice" type="C" size="10"> 
+			<default value="0"/>
+		</field>
+		<field name="scLastUpdate" type="TS">
+	      <default value="0000-00-00 00:00:00"/>
+	      <notnull/>
+	    </field>
+	</table>
+	<table name="DsBillingInformation">
+		<field name="biId" type="I">
+			<key />
+			<unsigned />
+			<autoincrement/>
+		</field>	
+		<field name="biUserId" type="I">			
+			<unsigned />			
+		</field>	
+		<field name="biName" type="C" size="50"> 			
+		</field>
+		<field name="biEmail" type="C" size="50"> 			
+		</field>
+		<field name="biPhone" type="C" size="50"> 			
+		</field>
+		<field name="biAddress1" type="C" size="150"> 			
+		</field>
+		<field name="biAddress2" type="C" size="50"> 			
+		</field>
+		<field name="biCity" type="C" size="30"> 			
+		</field>
+		<field name="biState" type="C" size="50"> 			
+		</field>
+		<field name="biCountry" type="C" size="50"> 			
+		</field>
+		<field name="biZip" type="C" size="50"> 			
+		</field>
+	</table>
+	<table name="DsShippingInformation">
+		<field name="siId" type="I">
+			<key />
+			<unsigned />
+			<autoincrement/>
+		</field>	
+		<field name="siUserId" type="I">			
+			<unsigned />			
+		</field>		
+		<field name="siName" type="C" size="50"> 			
+		</field>
+		<field name="siEmail" type="C" size="50"> 			
+		</field>
+		<field name="siPhone" type="C" size="50"> 			
+		</field>
+		<field name="siAddress1" type="C" size="150"> 			
+		</field>
+		<field name="siAddress2" type="C" size="50"> 			
+		</field>
+		<field name="siCity" type="C" size="30"> 			
+		</field>
+		<field name="siState" type="C" size="50"> 			
+		</field>
+		<field name="siCountry" type="C" size="50"> 			
+		</field>
+		<field name="siZip" type="C" size="50"> 			
+		</field>
+	</table>
+	<table name="DsOrders">
+		<field name="oId" type="I">
+			<key />
+			<unsigned />
+			<autoincrement/>
+		</field>	
+		<field name="oUserId" type="I">			
+			<unsigned />			
+		</field>	
+		<field name="oBillingId" type="I">			
+			<unsigned />			
+		</field>
+		<field name="oShippingId" type="I">			
+			<unsigned />			
+		</field>
+		<field name="oPaymentId" type="I">			
+			<unsigned />			
+		</field>	
+		<field name="oStatus" type="C" size="10"> 			
+		</field>
+		<field name="oTotal" type="C" size="50"> 			
+		</field>
+		<field name="oDate" type="T">
+		</field>		
+	</table>
+	<table name="DsOrderProducts">
+		<field name="opId" type="I">
+			<key />
+			<unsigned />
+			<autoincrement/>
+		</field>	
+		<field name="opOrderId" type="I">			
+			<unsigned />			
+		</field>	
+		<field name="opProductId" type="I">			
+			<unsigned />			
+		</field>
+		<field name="opQuantity" type="I">			
+			<unsigned />			
+		</field>	
+		<field name="opPrice" type="C" size="20"> 			
+		</field>
+		<field name="opProductName" type="C" size="50"> 			
+		</field>
+	</table>
+	<table name="DsPaymentMethods">
+		<field name="pmId" type="I">
+			<key />
+			<unsigned />
+			<autoincrement/>
+		</field>	
+		<field name="pmHandle" type="c" size="50">
+		</field>	
+		<field name="pmName" type="c" size="150">
+		</field>
+		<field name="pmIsEnabled" type="I">			
+			<unsigned />
+			<default value="0"/>			
+		</field>	
+		<field name="pkgID" type="I">			
+			<unsigned />			
+		</field>	
+	</table>
+</schema>
